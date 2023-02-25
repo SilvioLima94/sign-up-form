@@ -1,0 +1,67 @@
+body {
+  margin: 100px;
+}
+.container {
+  border: 1px solid red;
+  height: 1024px;
+  width: 1440px;
+  background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.logo-banner {
+  background-color: #596d48;
+  opacity: 0.6;
+  width: 30vw;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo-banner-header {
+  font-size: 3rem;
+  color: white;
+}
+
+.logo-banner > img {
+  height: 120px;
+  width: 100px;
+}
+
+.form-section {
+  /* border: 1px solid rgb(181, 38, 169); */
+  position: absolute;
+  left: 570px;
+  margin-top: -280px;
+}
+
+.form-text {
+  position: relative;
+  left: 110px;
+  height: 30vh;
+  width: 38vw;
+  margin-top: 100px;
+  padding-top: 120px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: lightgray;
+}
+
+.header > div {
+  margin-left: 100px;
+}
+
+.form-last-line {
+  margin-left: 60px;
+  /* margin-top: 60px; */
+  margin-top: 2rem;
+}
+
+fieldset {
+  height: 20vh;
+  width: 32vw;
+  margin-left: 85px;
+}
