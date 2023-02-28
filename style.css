@@ -1,67 +1,149 @@
-body {
-  margin: 100px;
+@font-face {
+  font-family: norsebold;
+  src: url(./font/Norse-Bold.otf);
 }
+
+:root {
+  --form-bg-color: #fafafa;
+  --font-size-medium: 1.25rem;
+  --font-weight: 600;
+  --font-color: #fff;
+  --font-family: norsebold;
+  --light-grey: #d3d3d3;
+  --oliver-color: #596d48;
+}
+
+body {
+  width: 920px;
+}
+
 .container {
-  border: 1px solid red;
-  height: 1024px;
-  width: 1440px;
-  background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-  background-repeat: no-repeat;
   position: relative;
+  width: 80vw;
+}
+
+.image-wrapper {
+  width: 600px;
+}
+
+#background-image {
+  width: 100%;
 }
 
 .logo-banner {
-  background-color: #596d48;
-  opacity: 0.6;
-  width: 30vw;
-  height: 180px;
+  background-color: #0d0e0c;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  opacity: 0.75;
+  position: absolute;
+  top: 200px;
+  width: 600px;
 }
 
 #logo-banner-header {
-  font-size: 3rem;
-  color: white;
+  color: var(--font-color);
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: norsebold;
 }
 
 .logo-banner > img {
-  height: 120px;
-  width: 100px;
+  height: 100px;
+  width: 80px;
+}
+
+#photo-credit {
+  color: var(--font-color);
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: -40px;
+  text-align: center;
 }
 
 .form-section {
-  /* border: 1px solid rgb(181, 38, 169); */
+  display: block;
+  left: 600px;
   position: absolute;
-  left: 570px;
-  margin-top: -280px;
+  top: 0;
+  width: 790px;
 }
 
 .form-text {
-  position: relative;
-  left: 110px;
-  height: 30vh;
-  width: 38vw;
-  margin-top: 100px;
-  padding-top: 120px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  background-color: lightgray;
+  background-color: var(--form-bg-color);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight);
+  height: 200px;
+  padding: 120px 80px 40px 30px;
+  width: 680px;
+  /* border: 1px solid black; */
 }
 
-.header > div {
-  margin-left: 100px;
+#sign-up {
+  display: flex;
 }
 
-.form-last-line {
-  margin-left: 60px;
-  /* margin-top: 60px; */
-  margin-top: 2rem;
+form {
+  /* box-shadow: 0px 10px 10px var(--light-grey); */
+  height: 300px;
+  padding: 0 30px;
+  width: 730px;
+  /* border: 1px solid green; */
 }
 
-fieldset {
-  height: 20vh;
-  width: 32vw;
-  margin-left: 85px;
+#second-header {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight);
+  padding: 20px 0;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+.right-container {
+  left: 400px;
+  position: absolute;
+  top: 420px;
+  width: 28%;
+  /* border: 1px solid red; */
+}
+
+input {
+  /* border-radius: 4px; */
+  color: var(--light-grey);
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.cta-content {
+  background-color: var(--form-bg-color);
+  height: 158px;
+  padding: 40px 30px;
+  /* border: 1px solid red; */
+}
+
+.cta-content > div {
+  margin: 20px 0;
+  font-size: var(--font-size-medium);
+}
+
+.cta-content > div > span {
+  color: var(--oliver-color);
+  font-weight: var(--font-weight);
+}
+
+button {
+  background-color: var(--oliver-color);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 6px 8px var(--light-grey);
+  color: var(--font-color);
+  font-weight: var(--font-weight);
+  padding: 20px 50px;
 }

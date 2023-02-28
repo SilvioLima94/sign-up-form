@@ -7,39 +7,58 @@
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-        <div class="container">  
+<body>
+        <div class="container">
+            <div class="image-wrapper">
+                <img id="background-image" src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="background-image" >
             <div class="logo-banner">
             <img src="./assets/odin-lined.png"/>
             <span id="logo-banner-header">ODIN</span>
             </div>
+                <p id="photo-credit">Photo by Halie West on Unplash</p>
+            </div>
+            
             <div class="form-section">
                 <div class="form-text">
-                <div>This is not a real online service! You know you need something </div>
-                <div>like this in your life to help you realize your deepest dreams.</div>
-                <div>Sign up <i>now</i> to get started.</div>
+                <p id="paragraph">This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.<span id="sign-up">Sign up now to get started.</span>
+                </p>
                 <div class="form-last-line">You <i>know</i> you want to.</div>
                 </div>
-                <div id="second-header">Let's do this!</div>
                 <form action="#" method="">
-                 <fieldset>
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" id="first_name" name="first_name"/>
-                <label for="last_name">LAST NAME NAME</label>
-                <input type="text" id="last_name" name="last_name"/>
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email"/>
-                <label for="phone_number">PHONE NUMBER</label>
-                <input type="tel" id="phone_number" name="phone_number"/>
-                <label for="pwd">PASSWORD</label>
-                <input type="password" id="pwd" name="password"/>
-                <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm_pwd" name="password"/>
-                 </fieldset>
+                <div id="second-header">Let's do this!</div>
+                    <label for="first_name">FIRST NAME</label>
+                    <div class="left">
+                    <input type="text" id="first_name" name="first_name"/>
+                    </div>
+                    <label for="email">EMAIL</label>
+                    <div class="left"> 
+                    <input type="email" id="email" name="email"/>
+                    </div>
+                    <label for="pwd">PASSWORD</label>
+                    <div class="left">
+                    <input type="password" id="pwd" name="password"/>
+                    </div>
+                <div class="right-container">
+                    <label for="last_name">LAST NAME</label>
+                    <div class="right">
+                    <input type="text" id="last_name" name="last_name"/>
+                    </div>
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <div class="right"> 
+                    <input type="tel" id="phone_number" name="phone_number"/>
+                    </div>
+                    <label for="confirm_pwd">CONFIRM PASSWORD</label>
+                    <div class="right"> 
+                    <input type="password" id="confirm_pwd" name="password"/>
+                    </div>
+                </div>
              </form>
-             <button>CREATE ACCOUNT</button>
-             <div>Already have an account? Log in</div>
-            </div>
-        </div>       
-        
+             <div class="cta-content">
+                <button>CREATE ACCOUNT</button>
+                <div>Already have an account? <span>Log in</span></div>
+             </div>
+            </div> 
+        </div>   
 </body>
 </html>
